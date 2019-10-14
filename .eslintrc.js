@@ -1,18 +1,20 @@
 /*eslint-env node*/
 module.exports = {
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module'
   },
-  "env": {
-    "browser": true
+  env: {
+    browser: true,
+    es6: true,
+    jest: true
   },
-  'rules': {
-    'camelcase': 2,
+  rules: {
+    camelcase: 2,
     'comma-dangle': [2, 'never'],
     'comma-style': [2, 'last'],
-    'eqeqeq': 2,
-    'indent': [2, 2, { 'VariableDeclarator': 2 }],
+    eqeqeq: 2,
+    indent: [2, 2, { VariableDeclarator: 2 }],
     'no-eq-null': 2,
     'no-extra-parens': 2,
     'no-extra-semi': 2,
@@ -26,7 +28,7 @@ module.exports = {
     'no-undef': 2,
     'no-underscore-dangle': 0,
     'no-void': 2,
-    'quotes': [2, 'single'],
-    'semi': [2, 'always']
+    quotes: [2, 'single'],
+    semi: [2, 'always']
   }
 };
